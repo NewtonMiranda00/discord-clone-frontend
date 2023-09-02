@@ -1,5 +1,15 @@
-import { defineConfig } from 'vite';
+import { UserConfig, defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
+import * as path from 'path';
+
+interface ViteConfig extends UserConfig {
+	test: {
+		environment: string;
+		setupFiles: string[];
+		testMatch: string[];
+		globals: boolean;
+	};
+}
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -10,4 +20,10 @@ export default defineConfig({
 		testMatch: ['./tests/**/*.test.tsx'],
 		globals: true,
 	},
-} as unknown);
+	resolve: {
+		alias: {
+			'@': path.resolve(__dirname, 'src'),
+			'@/ui': path.resolve(__dirname, 'src', 'components', 'ui'),
+		},
+	},
+} as ViteConfig);
