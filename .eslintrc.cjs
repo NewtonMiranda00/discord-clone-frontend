@@ -8,11 +8,11 @@ module.exports = {
 		'plugin:react/recommended',
 		'plugin:prettier/recommended',
 	],
-	ignorePatterns: ['dist', '.eslintrc.cjs', 'tailwind.config.js'],
+	ignorePatterns: ['dist', '*.cjs', '*.js'],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
 		ecmaVersion: 'latest',
-		sourceType: 'module'
+		sourceType: 'module',
 	},
 	plugins: ['react-refresh', 'react', '@typescript-eslint'],
 	rules: {
@@ -21,9 +21,8 @@ module.exports = {
 			{
 				tabWidth: 2,
 				singleQuote: true,
-				maxLen: 80,
-				useTabs: true,
-			}
+				maxLen: 100,
+			},
 		],
 		'react-refresh/only-export-components': [
 			'warn',
@@ -33,17 +32,17 @@ module.exports = {
 		'linebreak-style': ['error', 'unix'],
 		quotes: ['error', 'single'],
 		semi: ['error', 'always'],
-		'max-len': ['warn', { code: 80 }],
-    'no-trailing-spaces': 'warn',
-    'object-curly-spacing': ['warn', 'always'],
-    'array-bracket-spacing': [
-      'warn',
-      'never',
-      {
-        objectsInArrays: false,
-        arraysInArrays: false,
-      },
-    ],
-    'react/react-in-jsx-scope': ['off'],
+		'max-len': ['warn', { code: 100 }],
+		'no-trailing-spaces': 'warn',
+		'object-curly-spacing': ['warn', 'always'],
+		'array-bracket-spacing': [
+			'warn',
+			'never',
+			{
+				objectsInArrays: false,
+				arraysInArrays: false,
+			},
+		],
+		'react/react-in-jsx-scope': ['off'],
 	},
 };
