@@ -1,12 +1,7 @@
-import { Button } from '@/ui';
+import { AppRoutes } from './Routes.tsx';
 
 function App() {
-	return (
-		<div>
-			<h1>Hello World</h1>
-			<Button>Test</Button>
-		</div>
-	);
+	return <AppRoutes />;
 }
 
 export { App };
