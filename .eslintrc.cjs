@@ -22,7 +22,7 @@ module.exports = {
 				tabWidth: 2,
 				singleQuote: true,
 				maxLen: 80,
-				tabs
+				useTabs: true,
 			}
 		],
 		'react-refresh/only-export-components': [
