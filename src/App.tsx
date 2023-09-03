@@ -1,4 +1,4 @@
-import { AppRoutes } from './Routes.tsx';
+import { AppRoutes } from '@/routes';
 
 function App() {
 	return <AppRoutes />;
