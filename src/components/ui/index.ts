@@ -9,3 +9,4 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export * from './Button';
+export * from './DropdownMenu';

@@ -4,6 +4,6 @@ import { Home } from '.';
 describe('Home component', () => {
 	it('should render', () => {
 		render(<Home />);
-		screen.getByText(/Hello World/i);
+		screen.getByText(/Home/i);
 	});
 });

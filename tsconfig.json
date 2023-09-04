@@ -21,10 +21,13 @@
     "noFallthroughCasesInSwitch": true,
 
 		"paths": {
+			"@/layouts": ["./src/components/layouts"],
+			"@/layouts/*": ["./src/components/layouts/*"],
 			"@/ui": ["./src/components/ui"],
+			"@/ui/*": ["./src/components/ui/*"],
 			"@/*": ["./src/*"]
 		},
   },
-  "include": ["src", "tests"],
+  "include": ["src", "tests", "**/*.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

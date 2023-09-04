@@ -1,3 +1,15 @@
+import { ModeToggle } from '@/components';
+import { Outlet } from 'react-router-dom';
+
+// import { SVGLogo } from '@/assets';
+
 export function Home() {
-	return <h1>Hello World</h1>;
+	// <img src={SVGLogo} />
+	return (
+		<div>
+			<h1>Home</h1>
+			<ModeToggle />
+			<Outlet />
+		</div>
+	);
 }

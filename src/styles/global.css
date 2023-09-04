@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* font-family: 'Open Sans', sans-serif; */
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -76,9 +78,11 @@
 }
 
 body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	height: 100vh;
+	@apply flex justify-center items-center h-screen bg-background
 }
+
+/* #1E1F22 Eerie Black */
+/* #303338 Onyxs */
+/* #5765F2 Neon Blue */
+/* #CA3E40 Persian Red */
+/* #FFFFFF White */
