@@ -3,7 +3,7 @@ import { Home, Login } from '@/pages';
 // import { Redirect } from '.';
 
 export function BaseRoutes() {
-	const auth = true;
+	const auth = false;
 
 	return (
 		<>

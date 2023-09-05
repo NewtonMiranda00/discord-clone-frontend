@@ -3,17 +3,22 @@
 @tailwind utilities;
 
 /* font-family: 'Open Sans', sans-serif; */
+/* #1E1F22 Eerie Black */
+/* #303338 Onyxs */
+/* #5765F2 Neon Blue */
+/* #CA3E40 Persian Red */
+/* #FFFFFF White */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 20 14.3% 4.1%;
+    --background: #FFFFFF;
+    --foreground: #1E1F22;
 
-    --card: 0 0% 100%;
-    --card-foreground: 20 14.3% 4.1%;
+    --card: #FFFFFF;
+    --card-foreground: #1E1F22;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 20 14.3% 4.1%;
+    --popover: #FFFFFF;
+    --popover-foreground: #1E1F22;
 
     --primary: 24 9.8% 10%;
     --primary-foreground: 60 9.1% 97.8%;
@@ -38,14 +43,14 @@
   }
 
   .dark {
-    --background: 20 14.3% 4.1%;
-    --foreground: 60 9.1% 97.8%;
+    --background: #303338;
+    --foreground: #FFFFFF;
 
-    --card: 20 14.3% 4.1%;
-    --card-foreground: 60 9.1% 97.8%;
+    --card: #303338;
+    --card-foreground: #FFFFFF;
 
-    --popover: 20 14.3% 4.1%;
-    --popover-foreground: 60 9.1% 97.8%;
+    --popover: #303338;
+    --popover-foreground: #FFFFFF;
 
     --primary: 60 9.1% 97.8%;
     --primary-foreground: 24 9.8% 10%;
@@ -78,11 +83,5 @@
 }
 
 body {
-	@apply flex justify-center items-center h-screen bg-background
+	@apply flex justify-center items-center h-screen
 }
-
-/* #1E1F22 Eerie Black */
-/* #303338 Onyxs */
-/* #5765F2 Neon Blue */
-/* #CA3E40 Persian Red */
-/* #FFFFFF White */
