@@ -3,14 +3,18 @@
 @tailwind utilities;
 
 /* font-family: 'Open Sans', sans-serif; */
-/* #1E1F22 Eerie Black */
-/* #303338 Onyxs */
-/* #5765F2 Neon Blue */
-/* #CA3E40 Persian Red */
-/* #FFFFFF White */
+
+
+
 
 @layer base {
   :root {
+		--gray: #303338; /* Onyxs */
+		--white: #FFFFFF; /* White */
+		--red: #CA3E40; /* Persian Red */
+		--purple: #5765F2; /* Neon Blue */
+		--black: #1E1F22; /* Eerie Black */
+
     --background: #FFFFFF;
     --foreground: #1E1F22;
 
